@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include 
 from rest_framework import routers
-from DRF_lesson1.core.main.views import CarViewSet, CategoryViewSet
+from main.views import CarViewSet, CategoryViewSet
 
 router = routers.DefaultRouter()
 router.register(r'cars', CarViewSet)
